@@ -19,4 +19,16 @@ function activeMenu () {
   }
 }
 
+function toggleAside () {
+  const btn = document.getElementById('btn-aside');
+  const menu = document.getElementById('aside-menu');
+
+  btn.addEventListener('click', () => {
+    if (menu) {
+      menu.classList.toggle('toggle');
+    }
+  });
+}
+
 window.onload = addActive;
+toggleAside();
